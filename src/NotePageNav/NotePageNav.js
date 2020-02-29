@@ -33,7 +33,7 @@ export default class NotePageNav extends React.Component {
         <CircleButton
           tag='button'
           role='link'
-          onClick={() => this.handleBack(note.noteId)}
+          onClick={() => this.handleBack()}
           className='NotePageNav__back-button'
         >
           <FontAwesomeIcon icon='chevron-left' />
@@ -42,7 +42,7 @@ export default class NotePageNav extends React.Component {
         </CircleButton>
         {folder && (
           <h3 className='NotePageNav__folder-name'>
-            <Link to={`/folder/${note.folderId}`}>{folder.name}</Link>
+            <Link to={`/folder/${note.folderid}`}>{folder.name}</Link>
           </h3>
         )}
       </div>
