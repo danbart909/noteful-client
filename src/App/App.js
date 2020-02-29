@@ -23,16 +23,14 @@ class App extends Component {
         method: 'GET',
         headers: {
           'content-type': 'application/json',
-          'Authorization': `Bearer ${config.API_KEY}`,
-          'Access-Control-Allow-Origin': 'https://fathomless-shelf-77351.herokuapp.com/'
+          'Authorization': `Bearer ${config.API_TOKEN}`
         }
       }),
 			fetch(`${config.API_ENDPOINT}/folders`, {
         method: 'GET',
         headers: {
           'content-type': 'application/json',
-          'Authorization': `Bearer ${config.API_KEY}`,
-          'Access-Control-Allow-Origin': 'https://fathomless-shelf-77351.herokuapp.com/'
+          'Authorization': `Bearer ${config.API_TOKEN}`
         }
       })
 		])

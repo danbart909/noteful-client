@@ -76,7 +76,7 @@ export default class AddNote extends Component {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
-        'Authorization': `Bearer ${config.API_KEY}`
+        'Authorization': `Bearer ${config.API_TOKEN}`
       },
       body: JSON.stringify(note)
       // body: JSON.stringify({name, content, folderId, modified})
