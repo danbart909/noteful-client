@@ -23,7 +23,7 @@ export default class Note extends React.Component {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json',
-        'Authorization': `Bearer ${config.API_KEY}`
+        'Authorization': `Bearer ${config.API_TOKEN}`
       },
     })
       // .then(res => {
