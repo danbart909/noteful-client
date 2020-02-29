@@ -59,9 +59,9 @@ class App extends Component {
     })
   }
 
-	handleDeleteFolder = folderId => {
+	handleDeleteFolder = folderid => {
 		this.setState({
-			folders: this.state.folders.filter(folder => folder.id !== folderId)
+			folders: this.state.folders.filter(folder => folder.id !== folderid)
 		})
 	}
 
