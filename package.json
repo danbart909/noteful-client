@@ -20,7 +20,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "now ./build",
-    "postdeploy": "now alias -A ./build/now.json"
+    "postdeploy": "now ./build/now.json"
   },
   "eslintConfig": {
     "extends": "react-app"
